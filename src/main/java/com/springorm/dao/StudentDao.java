@@ -9,6 +9,7 @@ import java.util.List;
 public class StudentDao {
 
 	private HibernateTemplate hibernateTemplate;
+
 	@Transactional
 	public int insert(Student student) {
 		int i = (int) this.hibernateTemplate.save(student);
